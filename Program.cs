@@ -14,13 +14,13 @@
 
         if (name == "Ewa" && age == 30)
         {
-            Console.WriteLine("kobieta poniżej 30 lat");
-        }
-        if (gender == "Kobieta" && age < 30)
-        {
             Console.WriteLine("Ewa lat 30.");
         }
-        if (gender == "Mezczyzna" && age <= 17) // czyli tutaj jeśli wpiszę: Mężczyzna - kompiler tego nie uznaje, czy szefuńcio wie jak to obejść?
+        else if (gender == "Kobieta" && age < 30)
+        {
+            Console.WriteLine("kobieta poniżej 30 lat");
+        }
+        else if (gender == "Mezczyzna" && age <= 17) // czyli tutaj jeśli wpiszę: Mężczyzna - kompiler tego nie uznaje, czy szefuńcio wie jak to obejść?
         {
             Console.WriteLine("Mężczyzna niepełnoletni");
         }
